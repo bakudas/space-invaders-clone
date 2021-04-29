@@ -34,7 +34,8 @@ public class PlayerController : MonoBehaviour
         var shootButton = Input.GetKey(KeyCode.Space);
         if ( shootButton && PlayerStats.cooldown < 0 ) PlayerShoot();
 
-        if (transform.position.y < -4)
+        // reposition the player
+        if (transform.position.y < -4f)
         {
             transform.position = new  Vector2(transform.position.x, -4);
         }

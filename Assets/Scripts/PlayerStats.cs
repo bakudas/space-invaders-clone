@@ -13,7 +13,8 @@ public struct PlayerStats
     public Rigidbody2D rb;
     public GameObject bullet;
     public Transform spawnbulletPoint;
-    
+    public AudioSource playerAudio;
+
     // private vars
     private float hInput;
     private float cooldownDefault;

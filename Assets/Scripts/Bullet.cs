@@ -10,6 +10,8 @@ public class Bullet : MonoBehaviour
     // public vars
     public float bulletSpeed;
     public float boundUp = 5.5f;
+    public GameObject bulletFX;
+    public AudioSource bullerAudio;
 
     
     private void Update()
@@ -31,6 +33,9 @@ public class Bullet : MonoBehaviour
             
             // destroy bullet
             Destroy(gameObject);
+            
+            // spawn the bullet hit fx
+            Instantiate(bulletFX, transform.position, Quaternion.identity);
         }
     }
 }

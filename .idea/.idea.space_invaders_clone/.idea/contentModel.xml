@@ -8,6 +8,7 @@
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="Bullet.cs" t="Include" />
+          <e p="DestroyObjectByTime.cs" t="Include" />
           <e p="Enemies.cs" t="Include" />
           <e p="EnemiesBlock.cs" t="Include" />
           <e p="EnemiesStats.cs" t="Include" />
