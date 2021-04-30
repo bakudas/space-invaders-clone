@@ -11,8 +11,6 @@ public class Bullet : MonoBehaviour
     public float bulletSpeed;
     public float boundUp = 5.5f;
     public GameObject bulletFX;
-    public AudioSource bullerAudio;
-
     
     private void Update()
     {
@@ -24,10 +22,12 @@ public class Bullet : MonoBehaviour
     }
     
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.CompareTag("Enemies"))
+        
+        if (other.gameObject.CompareTag("Enemies"))
         {
+            
             // destroy enemies
             Destroy(other.gameObject);
             
@@ -36,6 +36,7 @@ public class Bullet : MonoBehaviour
             
             // spawn the bullet hit fx
             Instantiate(bulletFX, transform.position, Quaternion.identity);
+            
         }
     }
 }

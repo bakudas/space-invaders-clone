@@ -55,5 +55,8 @@ public class PlayerController : MonoBehaviour
         
         // set the default cooldown
         PlayerStats.cooldown = PlayerStats.CooldownDefault;
+        
+        // play shoot audio
+        PlayerStats.playerAudio.PlayOneShot(PlayerStats.shootAudio);
     }
 }

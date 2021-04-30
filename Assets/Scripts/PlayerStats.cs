@@ -14,6 +14,8 @@ public struct PlayerStats
     public GameObject bullet;
     public Transform spawnbulletPoint;
     public AudioSource playerAudio;
+    public AudioClip shootAudio;
+    public AudioClip deathAudio;
 
     // private vars
     private float hInput;

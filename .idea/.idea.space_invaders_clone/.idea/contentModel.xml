@@ -11,7 +11,7 @@
           <e p="DestroyObjectByTime.cs" t="Include" />
           <e p="Enemies.cs" t="Include" />
           <e p="EnemiesBlock.cs" t="Include" />
-          <e p="EnemiesStats.cs" t="Include" />
+          <e p="GameManager.cs" t="Include" />
           <e p="PlayerController.cs" t="Include" />
           <e p="PlayerStats.cs" t="Include" />
         </e>

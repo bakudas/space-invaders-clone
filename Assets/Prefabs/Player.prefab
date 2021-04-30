@@ -123,9 +123,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 1
+  m_audioClip: {fileID: 8300000, guid: 2bdad9cba32e308418102290b8699eb0, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.555
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -229,6 +229,9 @@ MonoBehaviour:
     bullet: {fileID: 1342327940070188808, guid: 2c38b1dcc9ab70849a9f24c53827180f,
       type: 3}
     spawnbulletPoint: {fileID: 1893173415698093885}
+    playerAudio: {fileID: 3325240634859403119}
+    shootAudio: {fileID: 8300000, guid: 2bdad9cba32e308418102290b8699eb0, type: 3}
+    deathAudio: {fileID: 8300000, guid: ac7f9912929daa3409583f936a0c300d, type: 3}
 --- !u!1 &8361596301415371591
 GameObject:
   m_ObjectHideFlags: 0
