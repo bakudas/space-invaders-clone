@@ -3,38 +3,28 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum EnemyType
-{
-    Inimigo01, Inimigo02, Inimigo03, Inimigo04
-}
 
-[Serializable]
-public struct EnemiesStats
-{
-    
-    //public vars
-    public EnemyType enemyType;
-    public float speed;
-    public GameObject bullet;
-    
-    // private vars
-    private Color enemieColor;
-    
-}
 
 [RequireComponent(typeof(BoxCollider2D))]
 [RequireComponent(typeof(Rigidbody2D))]
 public class Enemies : MonoBehaviour
 {
-    public EnemiesStats enemy;
 
+    // public vars
+    public EnemyInformation enemy;
 
-
-    public void Disable()
+    // private vars
+    private SpriteRenderer _spriteRenderer;
+    
+    private void Awake()
     {
-        gameObject.SetActive(false);
-    }
+        
+        _spriteRenderer = GetComponent<SpriteRenderer>();
 
+        _spriteRenderer.color = enemy.enemyColor;
+        
+
+    }
 }
 
 
