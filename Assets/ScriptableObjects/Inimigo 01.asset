@@ -16,4 +16,4 @@ MonoBehaviour:
   speed: 2
   scorePoint: 10
   bullet: {fileID: 1342327940070188808, guid: 2c38b1dcc9ab70849a9f24c53827180f, type: 3}
-  enemieColor: {r: 1, g: 0, b: 0, a: 0}
+  enemyColor: {r: 1, g: 0, b: 0, a: 1}
