@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 [RequireComponent(typeof(BoxCollider2D))]
@@ -14,6 +15,7 @@ public class Enemies : MonoBehaviour
     // private vars
     private SpriteRenderer _spriteRenderer;
     private GameManager GM;
+    public TMP_Text textScore;
     
     
     private void Awake()
@@ -28,16 +30,21 @@ public class Enemies : MonoBehaviour
         // get and set game manager
         GM = FindObjectOfType<GameManager>();
 
+        textScore.text = "+" + enemy.scorePoint.ToString();
     }
     
     
     private void OnDestroy()
     {
+        
         // score points
         GM.MakeScore(enemy.scorePoint);
         
         // play audio
         GM.PlayAudio(GM.explosionAudio);
+
+        Instantiate(textScore, transform.position, Quaternion.identity);
+
     }
 }
 
